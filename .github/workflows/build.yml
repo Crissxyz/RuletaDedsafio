@@ -20,10 +20,10 @@ steps:
       distribution: temurin
       java-version: '21'
 
-  - name: Preparar Gradle
-    uses: gradle/actions/setup-gradle@v4
-    with:
-      gradle-version: '8.8'
+        - name: Preparar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.8'
 
   - name: Comprobar version de Gradle
     run: gradle --version
